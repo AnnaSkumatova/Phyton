@@ -37,3 +37,38 @@
 
 # Задача 3. Напишите программу, в которой пользователь будет задавать две строки, а 
 # программа - определять количество вхождений одной строки в другой.
+
+# первый вариант.
+# string = "kdjiurgwenrgijwenjfhwenlkorjjwen"
+# substring = "wen"
+
+# print(string.count(substring))
+
+# # второй вариант
+# string = "kdjiurgwenrgijwenjfhwenlkorjjwen"
+# substring = "wen"
+
+# total = 0
+# for i in range(len(string)-len(substring)+1):
+#     count = 0
+#     if string[i] == substring[0]:
+#         for j in range(len(substring)):
+#             if string[i+j] == substring[j]:
+#                 count += 1
+#         if count == len(substring):
+#             total += 1
+# print(f"Строка '{substring}' входит в строку '{string}' - {total} раз(а)")
+
+
+# третий вариант
+string = "kdjiurgwenrgijwenjfhwenlkowenrjjwen"
+substring = "wen"
+
+counter = 0
+
+for i in range(len(string)):
+    if string[i:i+len(substring)] == substring:
+        counter +=1
+print(f'Количество вхождений - {counter}')
+
+
