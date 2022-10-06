@@ -1,8 +1,15 @@
 # Задача 1. Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
+# n = float(input("Введите вещественное число: "))
 
-
-
+# n = str(n)
+# summa: int = 0
+ 
+# for digit in n:
+#     if digit.isdigit():
+#         summa += int(digit)
+ 
+# print("Сумма:", summa)
 
 
 
@@ -45,3 +52,15 @@
 # Задача 4. Реализуйте алгоритм перемешивания списка, без использования встроеных методов (особенно SHUFFLE, 
 # без него) можно (нужно) использовать библиотеку Random
 
+# import random
+
+# list = []
+# for _ in range(10):
+#     list.append(random.randint(0, 50))
+# print ('Оригинальный список: ' + str(list))
+
+# for i in range(len(list)-1):
+#     j = random.randint(0, len(list)-1)
+#     list[i], list[j] = list[j], list[i]
+
+# print ('Перемешенный список: ' + str(list))
