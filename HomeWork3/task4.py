@@ -6,3 +6,13 @@
 # 3 => 11
 # 2 => 10
 
+num = int (input('Введите число в десятичной системе: '))
+
+number = num
+binaryNum = []
+
+while num > 0:
+    binaryNum.insert(0, str(num % 2))
+    num //= 2
+
+print(f"Число {number} в двоичной системе {''.join(binaryNum)}")
