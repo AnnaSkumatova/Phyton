@@ -77,8 +77,6 @@ with open(path, 'w', encoding='UTF-8') as data:
 with open(path, 'r', encoding='UTF-8') as data:
     file1 = data.readline()
 
-# print(file1)
-
 
 equation2 = createDict()
 
@@ -88,7 +86,6 @@ with open(path, 'w', encoding='UTF-8') as data:
 with open(path, 'r', encoding='UTF-8') as data:
     file2 = data.readline()
 
-# print(file2)
 
 finalEquation = summEquation(equation1, equation2)
 
