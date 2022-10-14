@@ -17,12 +17,12 @@ print(f'Последовательность цифр {listStr}')
 
 for c in listStr:
     if uniqueList.get(c):
-        uniqueList[c] = uniqueList.get(c) + I
+        uniqueList[c] = uniqueList.get(c) + 1
     else:
         uniqueList[c] = 1
 
 for i in uniqueList.items():
     if i[1] == 1:
-        finalStr += str(i[0])
+        finalStr += str(i[0]) + " "
 
 print(f'Уникальная(ые) цифра(ы) {finalStr}') if finalStr else print('Уникальных позиций нет')
