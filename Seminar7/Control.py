@@ -1,23 +1,34 @@
 import View, Model
 
-def InitData():
-    a = View.InputData('A')
-    b = View.InputData('B')
-    Model.InitA(a)
-    Model.InitB(b)
+def start():
+    a = View.InputData('first')
+    Model.set_first(a)
+    while True:
+        oper = View.InputOperator()
+        if oper == '=': break
+        b = View.InputData('second')
+        Model.set_second(b)
+        Model.set_result(oper)
+        result = Model.get_result()
+        if result == None:
+            View.division_by_zero()
+            break
+        first = Model.get_first()
+        second = Model.get_second()
+        View.OutputResult(first, second, oper, result)
+        Model.set_first(result)
+       
 
 
-def PrintValues():
-    a = Model.GetA()
-    b = Model.GetB()
-    View.OutputData(a)
-    View.OutputData(b)
+# def PrintValues():
+#     a = Model.get_first()
+#     b = Model.get_second()
+#     View.OutputData(a)
+#     View.OutputData(b)
 
 
-def PrintSum():
-    result = Model.SumData()
-    View.OutputResult(result)
-
-
-def InitOperation():
-    operation = View.InputData('Операции')
+# def solution():
+#     oper = View.InputOperator()
+#     Model.set_result(oper)
+#     result = Model.get_result()
+#     View.OutputResult(result)
