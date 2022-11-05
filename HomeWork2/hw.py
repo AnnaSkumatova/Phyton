@@ -1,15 +1,15 @@
 # Задача 1. Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
-# n = float(input("Введите вещественное число: "))
+n = float(input("Введите вещественное число: "))
 
-# n = str(n)
-# summa: int = 0
+n = str(n)
+summa: int = 0
  
-# for digit in n:
-#     if digit.isdigit():
-#         summa += int(digit)
+for digit in n:
+    if digit.isdigit():
+        summa += int(digit)
  
-# print("Сумма:", summa)
+print("Сумма:", summa)
 
 
 
@@ -25,7 +25,6 @@
 # for i in range(1, N+1):
 #     result = result * i
 #     print(result, end=' ')
-
 
 
 
