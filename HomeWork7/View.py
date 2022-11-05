@@ -3,4 +3,4 @@ def InputData():
     return data
 
 def outputResult(result):
-    print(f'Ответ = {result}')
+    print(f'Ответ равен {result}')
